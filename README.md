@@ -1,45 +1,31 @@
-# SCT_DS_3
-# Task 03 - Decision Tree Classifier (Bank Marketing Dataset)
+# Task 03 - Decision Tree Classifier
 
-## 🔍 Project Overview
-
-This project is part of the **SkillCraft Technology Internship**. The goal is to build a **Decision Tree Classifier** to predict whether a customer will purchase a product or service based on their demographic and behavioral data.
-
-We use the **Bank Marketing Dataset** from the **UCI Machine Learning Repository**.
-
----
+This project involves building a Decision Tree Classifier to predict whether a customer will purchase a product based on demographic and behavioral data using the Bank Marketing dataset from the UCI Machine Learning Repository.
 
 ## 📁 Dataset
 
-- Dataset Source: [Bank Marketing Dataset - UCI Repository](https://archive.ics.uci.edu/ml/datasets/bank+marketing)
-- Data Format: CSV
-- Target column: `y` (whether the client subscribed to a term deposit)
+- **Source**: [UCI Bank Marketing Dataset](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing)
+- **Attributes**: Age, job, marital status, education, default, balance, housing, loan, etc.
+- **Target**: `y` (yes/no – whether the client subscribed to a term deposit)
 
----
+## 🧠 Model
 
-## 🧠 ML Model
+- **Algorithm**: Decision Tree Classifier (`sklearn`)
+- **Preprocessing**: Label Encoding of categorical variables
+- **Evaluation**: Accuracy, Confusion Matrix, Classification Report
 
-- **Algorithm Used**: Decision Tree Classifier
-- **Libraries**: `pandas`, `numpy`, `matplotlib`, `seaborn`, `sklearn`
+## 📊 Results
 
----
+- Achieved good accuracy with entropy-based Decision Tree.
+- Visualization of the decision-making process using `plot_tree`.
 
-## 📊 Steps Followed
+## 📦 Libraries Used
 
-1. **Data Loading**
-2. **Exploratory Data Analysis**
-3. **Data Preprocessing**
-4. **Encoding Categorical Variables**
-5. **Train-Test Split**
-6. **Model Training (Decision Tree)**
-7. **Prediction and Evaluation**
-8. **Visualization**
+- `pandas`, `numpy`, `seaborn`, `matplotlib`
+- `sklearn.preprocessing`, `sklearn.model_selection`, `sklearn.tree`, `sklearn.metrics`
 
----
-
-## 🛠 Requirements
-
-Install the required libraries using pip:
+## 🚀 How to Run
 
 ```bash
-pip install pandas numpy scikit-learn matplotlib seaborn
+pip install pandas seaborn matplotlib scikit-learn
+python decision_tree_bank.py
